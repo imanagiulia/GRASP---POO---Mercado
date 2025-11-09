@@ -58,7 +58,7 @@ public class MercadoController {
                     break;
                 case 0: // sair
                     view.exibirMensagem("Saindo do sistema... ");
-                    break;
+                    return;
                 default:
                     view.exibirMensagem("Opção Inválida. Tente novamente!");
                     break;

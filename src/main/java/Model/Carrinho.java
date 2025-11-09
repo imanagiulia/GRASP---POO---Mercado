@@ -60,7 +60,7 @@ public class Carrinho {
             Integer qtd = entry.getValue();
             float subtotal = p.getPreco() * qtd;
 
-            String itemString = String.format("%s (Qtd: %d) - R$ $.2f", p.getNome(), qtd, subtotal);
+            String itemString = String.format("%s (Qtd: %d) - R$ %.2f", p.getNome(), qtd, subtotal);
             lista.add(itemString);
         }
 

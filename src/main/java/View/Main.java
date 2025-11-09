@@ -22,6 +22,8 @@ public class Main {
         System.out.print("Escolha uma opção: ");
         int op = scanner.nextInt();
 
+        scanner.nextLine();
+
         return op;
     }
 
