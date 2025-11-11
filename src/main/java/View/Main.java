@@ -18,6 +18,7 @@ public class Main {
         System.out.println("1. Adicionar Item");
         System.out.println("2. Ver carrinho");
         System.out.println("3. Remover Item");
+        System.out.println("4. Ver Funcionários");
         System.out.println("0. Sair");
         System.out.print("Escolha uma opção: ");
         int op = scanner.nextInt();
@@ -50,6 +51,17 @@ public class Main {
             }
             System.out.println("--------------");
             System.out.println("Total: R$ "+ String.format("%.2f", total));
+        }
+    }
+
+    public void exibirFuncionarios(List<String> funcionarios) {
+        System.out.println("--- Funcionários do Mercado ---");
+        if (funcionarios.isEmpty()) {
+            exibirMensagem("Nenhum funcionário cadastrado!");
+        } else {
+            for (String f : funcionarios) {
+                System.out.println("- " + f);
+            }
         }
     }
 }
