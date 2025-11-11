@@ -5,7 +5,7 @@ import java.util.*;
 /*
  * Principio Information Expert 
  * Essa classe fica responsável por calcular o valor total do carrinho
- * pois é ela que contêm a informação
+ * pois é ela que contêm a informação da lista de produtos e sabe suas quantidades e preço.
  */
 
 public class Carrinho {
@@ -43,7 +43,7 @@ public class Carrinho {
 
     public void mostrarItens(){
         for (Map.Entry<Produto, Integer> entry : itens.entrySet()){
-            System.err.println("Item: " + entry.getKey().getNome() + "| " + "Quantidade: " + entry.getValue());
+            System.out.println("Item: " + entry.getKey().getNome() + "| " + "Quantidade: " + entry.getValue());
         }
 
     }
