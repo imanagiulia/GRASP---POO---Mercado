@@ -1,6 +1,13 @@
 package Model;
 import java.time.LocalDate;
 
+/*
+ * Principio High Cohesion 
+ * 
+ * Classe responsável por fazer apenas uma coisa: o funcionário de limpeza possui métodos e atributos especificos para sua função
+ */
+
+
 public class Limpeza extends Funcionario{
 
     public Limpeza(String nome, LocalDate data_nasc, String cpf, String sexo) {
