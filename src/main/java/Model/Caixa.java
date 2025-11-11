@@ -2,6 +2,12 @@ package Model;
 
 import java.time.LocalDate;
 
+
+/*
+ * Principio High Cohesion 
+ * 
+ * Classe referente ao funcionário de caixa, faz apenas funções ligado a esse cargo.
+ */
 public class Caixa extends Funcionario{
 
     public Caixa(String nome, LocalDate dataNasc, String cpf, String sexo) {
